@@ -1,16 +1,5 @@
-<%
 
-
-
-
-
-
-
-%>
-
-
-
-<h1>Roll the dice</h1>
+<h1>Hey <%=@name %>! Roll the dice</h1>
 <p>
   <img src="/images/dice/<%= @die1 %>.svg">
   <img src="/images/dice/<%= @die2 %>.svg">
@@ -19,5 +8,5 @@
   The total is <%= @total %>
 </p>
 <p>
-  <a href="/dice">Roll Again</a>
+  <a href="/dice?name=<%= @name %>">Roll Again</a>
 </p>
