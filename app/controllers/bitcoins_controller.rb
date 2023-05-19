@@ -2,7 +2,7 @@ class BitcoinsController < ApplicationController
 
   def index
     # add backend code
-    bitcoin = 1.0
+    bitcoin = params["amount"]
 
     # connect to the Coindesk API
     # DON'T CHANGE THIS CODE
