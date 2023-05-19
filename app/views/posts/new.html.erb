@@ -2,5 +2,21 @@
 
 <%= form_with :model => @post do |form| %>
   <%# add form fields %>
+  <p>
+  <%= form.label "author" %>
+  <%= form.text_field "author" %>
+  </p>
+  
+
+  <p>
+  <%= form.label "body" %>
+  <%= form.text_field "body" %>
+  </p>
+
+
+  <p>
+  <%= form.label "image" %>
+  <%= form.text_field "image" %>
+  </p>
   <%= form.submit %>
 <% end %>
