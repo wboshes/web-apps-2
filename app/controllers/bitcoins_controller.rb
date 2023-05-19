@@ -1,6 +1,9 @@
 class BitcoinsController < ApplicationController
 
   def index
+  end
+
+  def create
     # add backend code
     bitcoin = params["amount"]
 
